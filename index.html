@@ -3,9 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Project</title>
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Project RevoU Testing</h1>
+        <div class="website-content">
+            <header class="header">
+                <img src="Logo-RevoU.png" class="logo">
+                <nav class="navigation">
+                    <button class="nav-btn">Home</button>
+                    <button class="nav-btn">Our Profile</button>
+                    <button class="nav-btn">Portofolio</button>
+                    <button class="nav-btn">Message Us</button>
+                </nav>
+            </header>
+
+            <main class="main-content">
+                <div class="welcome-section">
+                    <h1>Hi Harfi, Welcome To Website</h1>
+                    <p>in simple website design portofolio</p>
+                </div>
+
+                <div class="headquarters-section">
+                    <h2>Our Headquarter</h2>
+                    <div class="locations">
+                        <div class="location">
+                            <div class="location-circle"></div>
+                            <span>Jakarta</span>
+                        </div>
+                        <div class="location">
+                            <div class="location-circle"></div>
+                            <span>Bandung</span>
+                        </div>
+                        <div class="location">
+                            <div class="location-circle"></div>
+                            <span>Surabaya</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message-section">
+                    <h2>Message Us</h2>
+                    <div class="message-content">
+                        <div class="form-section">
+                            <div class="form-group">
+                                <label>Nama</label>
+                                <input type="text" id="nama">
+                            </div>
+                            <div class="form-group">
+                                <label>Tanggal Lahir</label>
+                                <input type="date" id="tanggalLahir" value="2000-03-09">
+                            </div>
+                            <div class="form-group">
+                                <label>Jenis Kelamin</label>
+                                <div class="radio-group">
+                                    <input type="radio" id="laki" name="gender" checked>
+                                    <label for="laki">Laki-Laki</label>
+                                    <input type="radio" id="perempuan" name="gender">
+                                    <label for="perempuan">Perempuan</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Pesan</label>
+                                <textarea id="pesan" placeholder="Pesan"></textarea>
+                            </div>
+                            <button class="submit-btn" onclick="submitForm()">Submit</button>
+                        </div>
+                        <div class="info-section">
+                            <div class="info-item">
+                                <span class="info-label">Current time:</span>
+                                <span class="info-value" id="currentTime">Fri Jun 17 2022 11:27:36 GMT+0100</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Nama:</span>
+                                <span class="info-value">Harfi Maulana</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Tanggal Lahir:</span>
+                                <span class="info-value">9/11/1/1999</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Jenis Kelamin:</span>
+                                <span class="info-value">Laki - Laki</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Pesan:</span>
+                                <span class="info-value">Halo Semua Good Morning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <span>Created By ReactJ</span>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
