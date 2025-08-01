@@ -1,95 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Hafidz</title>
+
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Website</title>
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="bg-white p-2 shadow-md">
-        <div class="flex items-center gap-0 px-4">
-            <img class="size-12 shrink-0 ml-2 md:ml-5" src="img/Logo-RevoU.png" alt="logo-revou" />
-            <div class="flex ms-auto mr-2 md:mr-8 divide-x-2 divide-black border-2 border-black rounded-md overflow-hidden">
-                <button class="hidden md:block bg-transparent px-9 h-8 hover:bg-gray-200">Home</button>
-                <button class="hidden md:block bg-transparent px-8 h-8 hover:bg-gray-200">Our Profile</button>
-                <button class="hidden md:block bg-transparent px-8 h-8 hover:bg-gray-200">Portofolio</button>
-                <button class="bg-transparent px-9 h-8 hover:bg-gray-200">Message Us</button>
-            </div>
-        </div>
-    </nav>
+    <!-- Header Content -->
+    <header class="main-header">
+        <!-- Logo Icon -->
+        <img class="size-14 shrink-0 ml-2 md:ml-5" src="assets/Logo-RevoU.png" alt="logo-revou" />
 
-    <div class="flex flex-col px-4 md:px-27 py-10 border-b-2 h-[578px]">
-        
-        <div>
-            <h1 id="sambutan" class="text-3xl mb-2"></h1>
-            <h3 id="tentang" class="text-1xl mt-2"></h3>
-        </div>
-    </div>
+        <!-- Navigation Menu -->
+        <nav class="nav">
+            <a class="border rounded-[5px] px-[8px] py-[4px] font-bold" href="#Home">Home</a>
+            <a class="border rounded-[5px] px-[8px] py-[4px] font-bold" href="#Profile">Our Profile</a>
+            <a class="border rounded-[5px] px-[8px] py-[4px] font-bold" href="#Headquarter">Headquarter</a>
+            <a class="border rounded-[5px] px-[8px] py-[4px] font-bold " href="#Message">Message Us</a>
+        </nav>
+    </header>
 
-    <div class="flex flex-col px-4 md:px-27 py-10 h-[856px] md:h-[408px] border-b-2">
-        <h1 class="text-2xl font-bold">Our Headquarter</h1>
-        <div class="flex flex-col md:flex-row mt-15 justify-center gap-6 md:gap-22" id="lingkaran">
-            <div class="flex flex-col items-center">
-            <img src="img/Jakarta.webp" alt="" class="border-2 rounded-full" id="picture" >
-            <p class="mt-2 text-xl">Jakarta</p>
-            </div>
-            <div class="flex flex-col items-center">
-            <img src="img/Bandung.jpg" alt="" class="border-2 rounded-full" id="picture">
-            <p class="mt-2 text-xl">Bandung</p>
-            </div>
-            <div class="flex flex-col items-center">
-            <img src="img/Surabaya.jpg" alt="" class="border-2 rounded-full" id="picture">
-            <p class="mt-2 text-xl">Surabaya</p>
-            </div>
-        </div>
-    </div>
+    <hr />
 
-    <div class="flex flex-col px-4 md:px-27 py-10 h-auto md:h-[478px] border-b-2">
-        <h1 class="text-2xl font-bold">Message Us</h1>
-        <div class="flex flex-col md:flex-row gap-6 mt-6 justify-center">
-            <form id="form-pesan" class="w-full md:w-[900px] max-w-full md:max-w-lg shrink-0">
-                <div class="flex mt-6 md:mt-4 items-center">
-                    <label for="name" class="w-24 text-sm">Nama</label>:&nbsp;
-                    <input type="text" id="name" class="flex-1 border-2 rounded px-3 py-1 khusus" placeholder="Nama">
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <hr>
+
+        <section class="p-[16px]" id="Home">
+            <div class="flex flex-col px-4 md:px-27 py-10 border-b-2 min-h-[600px]">
+                <!-- Welcome Message -->
+                <div class="mb-8">
+                    <h1 class="text-3xl font-bold">Welcome <span id="welcome-speech"></span> to My Website</h1>
+                    <p class="text-1xl font-medium">This page is the first page I created in the RevoU mini project.</p>
                 </div>
 
-                <div class="flex mt-2 items-center">
-                    <label for="birthdate" class="w-24 text-sm">Tanggal Lahir</label>:&nbsp;
-                    <input type="date" id="birthdate" class="flex-1 border-2 rounded px-3 py-1 ">
-                </div>
-
-                <div class="flex mt-2 items-center">
-                    <label for="gender" class="w-24 text-sm">Jenis Kelamin</label>:&nbsp;
-                    <div class="flex gap-3">
-                        <label class="flex items-center gap-1">
-                            <input type="radio" name="gender" id="laki" value="Laki-Laki" class="tombol-radio-custom">
-                            <span>Laki-Laki</span>
-                        </label>
-                        <label class="flex items-center gap-1">
-                            <input type="radio" name="gender" id="perempuan" value="Perempuan" class="tombol-radio-custom">
-                            <span>Perempuan</span>
-                        </label>
+                <!-- Company Description -->
+                <div class="flex flex-col lg:flex-row items-center gap-8 mt-8">
+                    <div class="flex-1 space-y-6">
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            RevoU adalah lembaga pendidikan yang berkomitmen untuk memberikan pengalaman belajar yang luar biasa. Kami menawarkan program-program pelatihan yang dirancang untuk mempersiapkan anda menghadapi tantangan di dunia digital.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Dengan pendekatan yang inovatif dan pengajaran dari para ahli, RevoU siap membantu Anda mencapai tujuan karir Anda. Bergabunglah dengan kami dan jadilah bagian dari komunitas yang mendukung pertumbuhan dan pengembangan diri.
+                        </p>
+                        <div class="mid flex flex-wrap gap-4 mt-6">
+                            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">Backend Development</span>
+                            <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">Frontend Development</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-sm font-medium">Fullstack Development</span>
+                            <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium">UI/UX Design</span>
+                            <span class="bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-medium">Data Science</span>
+                            <span class="bg-teal-100 text-teal-800 px-4 py-2 rounded-full text-sm font-medium">Cyber Security</span>
+                        </div>
                     </div>
                 </div>
+                <!-- School Image -->
+                <div class="mt-8">
+                    <img src="assets/School.jpeg" alt="Sekolah" class="w-full h-auto rounded-lg">
+                </div>
+            </div>
+        </section>
 
-                <div class="flex mt-2">
-                    <label for="pesan" class="w-24 text-sm">Pesan</label>:&nbsp;
-                    <textarea id="pesan" class="flex-1 border-2 rounded px-3 pt-1 pb-2 khusus resize-none" placeholder="Pesan" rows="5"></textarea>
+        <!-- Our Profile Section -->
+        <section class="p-[16px]" id="Profile">
+            <div class="flex flex-col px-4 md:px-27 py-10 border-b-2">
+                <h1 class="text-2xl font-bold mb-6">Our Profile</h1>
+                <div class="flex flex-col md:flex-row mt-4 gap-8 justify-center">
+                    <div class="flex-1">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                            RevoU adalah lembaga pendidikan digital yang berfokus pada pengembangan skill masa depan untuk membantu individu dan profesional menghadapi tantangan dunia kerja modern.
+                            Sejak berdiri, kami berkomitmen untuk menghadirkan pengalaman belajar yang praktis, interaktif, dan relevan dengan kebutuhan industri.</p>
+                        
+                        <p class="text-lg text-gray-700 leading-relaxed"> 
+                            Kami percaya bahwa setiap orang memiliki potensi untuk berkembang, dan pendidikan yang tepat dapat membuka peluang baru di era digital.
+                            Untuk itu, RevoU menyediakan berbagai program pelatihan di bidang Software Engineering, Digital Marketing, Data Analytics, dan Product Management, yang dirancang bersama praktisi berpengalaman dari perusahaan ternama.</p>
+                    </div>
+                    <div class="flex-1">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                            Melalui pendekatan 100% online LIVE, peserta tidak hanya mempelajari teori, tetapi juga:
+                        </p>
+                        
+                        <ul class="list-disc pl-5 mb-4">
+                            <li class="text-lg text-gray-700 leading-relaxed mb-2">Mengerjakan studi kasus nyata dari industri</li>
+                            <li class="text-lg text-gray-700 leading-relaxed mb-2">Membangun portofolio profesional untuk karier</li>
+                            <li class="text-lg text-gray-700 leading-relaxed mb-2">Mendapatkan bimbingan langsung melalui mentoring dan career coaching</li>
+                            <li class="text-lg text-gray-700 leading-relaxed mb-2">Bergabung dengan komunitas suportif yang membantu pertumbuhan dan koneksi profesional</li>
+                        </ul>
+                        
+                        <p class="text-lg text-gray-700 leading-relaxed"> 
+                            Hingga kini, RevoU telah membantu ribuan alumni meningkatkan kemampuan mereka dan bertransformasi menjadi talenta digital siap kerja.
+                            Kami akan terus berinovasi agar setiap peserta merasakan perjalann belajar yang menyenangkan, relevan, dan berdampak nyata bagi masa depan mereka.
+                        </p>
+                    </div>
                 </div>
-                
-                <div class="flex mt-4">
-                    <button class="flex-1 bg-gray-200 border-2 border-black text-black text-sm rounded px-3 pt-2 pb-2 hover:bg-gray-300" type="submit">Submit</button>
+            </div>
+        </section>
+
+        <!-- Headquarter Section -->
+        <section class="p-[16px]" id="Headquarter">
+            <div class="flex flex-col px-4 md:px-27 py-10 h-auto md:h-[408px] border-b-2">
+                <h1 class="text-2xl font-bold">Our Headquarter</h1>
+                <div class="flex flex-col md:flex-row mt-6 justify-center gap-6 md:gap-22" id="lingkaran">
+
+                    <!-- Jakarta Image-->
+                    <div class="flex flex-col items-center">
+                        <img src="assets/Jakarta.webp" alt="" class="border-2 rounded-full" id="picture">
+                        <p class="mt-2 text-xl">Jakarta</p>
+                    </div>
+
+                    <!-- Bandung Image -->
+                    <div class="flex flex-col items-center">
+                        <img src="assets/Bandung.jpg" alt="" class="border-2 rounded-full" id="picture">
+                        <p class="mt-2 text-xl">Bandung</p>
+                    </div>
+
+                    <!-- Surabaya Image -->
+                    <div class="flex flex-col items-center">
+                        <img src="assets/Surabaya.jpg" alt="" class="border-2 rounded-full" id="picture">
+                        <p class="mt-2 text-xl">Surabaya</p>
+                    </div>
+
+                    <!-- Bekasi Image -->
+                    <div class="flex flex-col items-center">
+                        <img src="assets/Bekasi.jpg" alt="" class="border-2 rounded-full" id="picture">
+                        <p class="mt-2 text-xl">Bekasi</p>
+                    </div>
+
+                    <!-- Jogja Image -->
+                    <div class="flex flex-col items-center">
+                        <img src="assets/Jogja.jpg" alt="" class="border-2 rounded-full" id="picture">
+                        <p class="mt-2 text-xl">Jogja</p>
+                    </div>
+
+                    <!-- Makassar Image -->
+                    <div class="flex flex-col items-center">
+                        <img src="assets/Makassar.jpg" alt="" class="border-2 rounded-full" id="picture">
+                        <p class="mt-2 text-xl">Makassar</p>
+                    </div>
+
+                    <!-- Bali Image -->
+                    <div class="flex flex-col items-center">
+                        <img src="assets/Bali.jpg" alt="" class="border-2 rounded-full" id="picture">
+                        <p class="mt-2 text-xl">Bali</p>
+                    </div>
                 </div>
-            </form>
-            <div class="w-full md:w-[700px] h-[290px] border-2 mt-6 md:mt-6 md:ml-26 text-xs md:text-base" id="pesan_masuk">
+            </div>
+        </section>
+
+        <!-- Message Us Section -->
+        <Section class="p-[16px]" id="Message">
+        <div class="flex flex-col px-4 md:px-27 py-10 h-auto md:h-[500px] border-b-2">
+            <h1 class="text-2xl font-bold">Message Us</h1>
+            
+            <!-- Success Message -->
+            <div class="success-message" id="success-message">
+                Pesan Anda berhasil dikirim! Terima kasih telah menghubungi kami.
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-6 mt-6 justify-center">
+                <form id="form-pesan" class="w-full md:w-[900px] max-w-full md:max-w-lg shrink-0">
+                    <div class="flex mt-6 md:mt-4 items-center">
+                        <label for="name" class="w-24 text-sm">Name</label>:&nbsp;
+                        <div class="flex-1">
+                            <input type="text" id="name" class="w-full border-2 rounded px-3 py-1 khusus" placeholder="Name" required>
+                            <div class="error-text" id="name-error"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex mt-2 items-center">
+                        <label for="birthdate" class="w-24 text-sm">Birthdate</label>:&nbsp;
+                        <div class="flex-1">
+                            <input type="date" id="birthdate" class="w-full border-2 rounded px-3 py-1" required>
+                            <div class="error-text" id="birthdate-error"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex mt-2 items-start">
+                        <label for="gender" class="w-24 text-sm pt-1">Gender</label>:&nbsp;
+                        <div class="flex-1">
+                            <div class="flex gap-3">
+                                <label class="flex items-center gap-1">
+                                    <input type="radio" name="gender" id="laki" value="Laki-Laki" class="tombol-radio-custom" required>
+                                    <span>Laki-Laki</span>
+                                </label>
+                                <label class="flex items-center gap-1">
+                                    <input type="radio" name="gender" id="perempuan" value="Perempuan" class="tombol-radio-custom" required>
+                                    <span>Perempuan</span>
+                                </label>
+                            </div>
+                            <div class="error-text" id="gender-error"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex mt-2">
+                        <label for="pesan" class="w-24 text-sm">Message</label>
+                        <div class="flex-1">
+                            <textarea id="pesan" class="w-full border-2 rounded px-3 pt-1 pb-2 khusus resize-none" placeholder="What message would you like to convey?" rows="5" required></textarea>
+                            <div class="error-text" id="pesan-error"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex mt-4">
+                        <button class="flex-1 bg-gray-200 border-2 border-black text-black text-sm rounded px-3 pt-2 pb-2 hover:bg-gray-300" type="submit">Submit</button>
+                    </div>
+                </form>
+
+                <!-- Messages Display Area -->
+                <div class="w-full md:w-[700px] h-[290px] border-2 mt-6 md:mt-6 md:ml-26 text-xs md:text-base overflow-y-auto p-4" id="pesan_masuk">
+                    <p class="text-gray-500 italic">Messages will appear here...</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="h-[80px] flex items-center justify-end pr-10">
-        <h1 class="">Created By RevoU</h1>
-    </div>
+        </Section>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer>
+        <div class="mid h-[40px] flex items-center justify-end pr-10">
+            <h1 class="">Created By Muhammad Hafidz</h1>
+        </div>
+    </footer>
+    
+    <!-- Custom JavaScript -->
     <script src="js/script.js"></script>
 </body>
 </html>
